@@ -1,11 +1,12 @@
-from ads_surkas.preprocessing.filter import example_filter
 from example import example
+
+from ads_surkas.preprocessing.preprocess import clean_data
 
 
 def main():
     print("Hello")
     example()
-    example_filter(["some", "list"])
+    clean_data(["some", "list"])
 
 
 if __name__ == "__main__":
