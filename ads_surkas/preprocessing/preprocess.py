@@ -16,6 +16,7 @@ def load_data(filename: str):
 
 
 def clean_data(df: pd.DataFrame):
+    data = df.copy(deep=True)
     data = df[df["item_id"].notna()]
     data["Year"] = data["Year"].astype("int32")
     data["Month"] = data["Month"].astype("int32")
